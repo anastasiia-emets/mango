@@ -7,7 +7,9 @@
 }
 
 .main-block {
+
   background: url(../images/bg.jpg) no-repeat center center;
+
   width: 100%;
   min-height: 100vh;
 }
@@ -276,6 +278,7 @@ a {
 
 .unbutton {
   background-image: url(../images/Vector1.svg);
+
   width: 30px;
   height: 30px;
   background-repeat: no-repeat;
