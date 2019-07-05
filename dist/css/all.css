@@ -7,7 +7,7 @@
 }
 
 .main-block {
-  background-image: url(../../images/bg.jpg);
+  background: url(../images/bg.jpg) no-repeat center center;
   width: 100%;
   min-height: 100vh;
 }
@@ -54,7 +54,7 @@
 }
 
 .main-block__icon {
-  padding-right: 90px;
+  padding-right: 80px;
 }
 
 .main-block__text2 {
@@ -99,6 +99,7 @@
   text-transform: uppercase;
   color: white;
   padding-left: 10px;
+  cursor: pointer;
 }
 
 .main-block-text__description {
@@ -155,15 +156,16 @@
   width: 98px;
   height: 49px;
   margin-top: -20px;
+  cursor: pointer;
 }
 
 .main-block__humb {
   width: 20px;
   height: 25px;
-  background-image: url(../../images/Vector.svg);
+  background-image: url(../images/Vector.svg);
 }
 
-#menu-button {
+.main-block__humb {
   position: relative;
   cursor: pointer;
   -webkit-transition: all linear 0.3s;
@@ -185,7 +187,7 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin: 0 auto;
-  margin-top: 200px;
+  margin-top: 150px;
 }
 
 .main-block__link-menu {
@@ -212,15 +214,15 @@
   color: #c86dff;
 }
 
-#example {
+.main-block-text__description {
   display: none;
 }
 
-#example .new {
+.main-block-text__description .new {
   opacity: 0;
 }
 
-#example .div_opacity {
+.main-block-text__description .div_opacity {
   -webkit-transition: opacity 0.1s ease-in-out;
   transition: opacity 0.1s ease-in-out;
   opacity: 1;
@@ -261,24 +263,50 @@ a {
   height: 100px;
 }
 
+.main-block__link-menu:hover {
+  -webkit-animation-name: bounce-1;
+          animation-name: bounce-1;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
 .unhover {
   display: none;
 }
 
 .unbutton {
-  background-image: url(../../images/Vector1.svg);
-  width: 15px;
-  height: 15px;
+  background-image: url(../images/Vector1.svg);
+  width: 30px;
+  height: 30px;
   background-repeat: no-repeat;
-  margin-top: 3px;
+  margin-top: 2px;
 }
 
 .main-block-item2_hover {
   margin-top: 200px;
 }
 
+.wrap {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-size: cover;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 body {
   background: white;
+  position: relative;
+  overflow-x: hidden;
 }
 
 body,

@@ -1,9 +1,10 @@
 .wrapp-main-block {
   background-color: white;
+  
 }
 
 .main-block {
-  background-image: url(../../images/bg.jpg);
+  background: url(../../images/bg.jpg) no-repeat center center;
   width: 100%;
   min-height: 100vh;
 
@@ -30,7 +31,7 @@
     padding-right: 100px;
   }
   &__icon {
-    padding-right: 90px;
+    padding-right: 80px;
   }
   &__text2 {
     width: 60%;
@@ -68,6 +69,7 @@
     text-transform: uppercase;
     color: white;
     padding-left: 10px;
+    cursor: pointer;
   }
   &-text__description {
     font-size: 18px;
@@ -113,6 +115,7 @@
     width: 98px;
     height: 49px;
     margin-top: -20px;
+    cursor: pointer;
   }
   &__humb {
     width: 20px;
@@ -121,7 +124,7 @@
   }
 }
 
-#menu-button {
+.main-block__humb {
   position: relative;
   cursor: pointer;
   transition: all linear 0.3s;
@@ -141,8 +144,7 @@
   border-radius: 5px;
   justify-content: space-around;
   margin: 0 auto;
-  margin-top:200px;
-
+  margin-top: 150px;
 }
 
 .main-block__link-menu {
@@ -164,13 +166,13 @@
 .main-block__link:hover {
   color: #c86dff;
 }
-#example {
+.main-block-text__description {
   display: none;
 }
-#example .new {
+.main-block-text__description .new {
   opacity: 0;
 }
-#example .div_opacity {
+.main-block-text__description .div_opacity {
   transition: opacity 0.1s ease-in-out;
   opacity: 1;
 }
@@ -201,18 +203,44 @@ a {
   background: #c86dff;
   height: 100px;
 }
-.unhover{
-  display:none;
+
+.main-block__link-menu:hover {
+  animation-name: bounce-1;
+  animation-timing-function: linear;
 }
-.unbutton{
+
+.unhover {
+  display: none;
+}
+.unbutton {
   background-image: url(../../images/Vector1.svg);
-  width: 15px;
-    height: 15px;
-    background-repeat: no-repeat;
-    margin-top:3px;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  margin-top: 2px;
 }
 
+.main-block-item2_hover {
+  margin-top: 200px;
+}
+.wrap {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
 
-.main-block-item2_hover{
-  margin-top:200px;
+ 
+}
+.bg {
+  width: 100%;
+  
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  
+  
+  background-size: cover;
+
+  transform: scale(1.1);
 }

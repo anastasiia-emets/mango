@@ -1,9 +1,11 @@
 @import "_variable";
 @import "../componets/main-block/main-block";
 
-
 body {
   background: white;
+
+  position: relative;
+  overflow-x:hidden
 }
 body,
 html {
@@ -13,7 +15,7 @@ html {
 * {
   margin: 0;
   box-sizing: border-box;
-  padding:0;
+  padding: 0;
 }
 html {
   min-height: 100%;
@@ -21,5 +23,3 @@ html {
 body {
   min-height: 100%;
 }
-
-
