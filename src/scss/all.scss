@@ -1,0 +1,25 @@
+@import "_variable";
+@import "../componets/main-block/main-block";
+
+
+body {
+  background: white;
+}
+body,
+html {
+  min-height: 100%;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding:0;
+}
+html {
+  min-height: 100%;
+}
+body {
+  min-height: 100%;
+}
+
+
